@@ -10,3 +10,17 @@
 
 # Output of the go coverage tool, specifically when used with LiteIDE
 *.out
+vendor/
+**/*.log
+**/*.sqlite
+.idea/
+bin/
+tmp/
+node_modules/
+.sass-cache/
+*-packr.go
+public/assets/
+videos
+.vscode/
+.grifter/
+.env
