@@ -57,6 +57,9 @@ func App() *buffalo.App {
 		app.Use(translations())
 
 		app.GET("/", HomeHandler)
+		// TODO: check what HTTP method webhooks use
+		// https://developer.zoom.us/docs/webhooks/
+		app.POST("/zoom_webhook", zoomWebhook)
 
 		app.ServeFiles("/", assetsBox) // serve files from the public directory
 	}

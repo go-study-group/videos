@@ -2,6 +2,7 @@ module videos
 
 require (
 	github.com/codegangsta/negroni v1.0.0 // indirect
+	github.com/dgrijalva/jwt-go v3.2.0+incompatible
 	github.com/gobuffalo/buffalo v0.13.0
 	github.com/gobuffalo/buffalo-pop v1.1.0
 	github.com/gobuffalo/envy v1.6.5
@@ -13,6 +14,7 @@ require (
 	github.com/gobuffalo/packr v1.13.7
 	github.com/gobuffalo/pop v4.8.4+incompatible
 	github.com/gobuffalo/suite v2.1.6+incompatible
+	github.com/google/go-querystring v1.0.0
 	github.com/markbates/grift v1.0.4
 	github.com/markbates/willie v1.0.9 // indirect
 	github.com/nicksnyder/go-i18n v1.10.0 // indirect
