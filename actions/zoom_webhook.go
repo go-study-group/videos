@@ -26,12 +26,16 @@ func zoomWebhook(c buffalo.Context) error {
 	}
 	if hook.Status != recordingCompleted {
 		logger.Errorf("hook status was not %s", recordingCompleted)
+		// TODO: is 400 the right thing to send back to zoom?
 		return c.Error(400, fmt.Errorf("hook status was not %s", recordingCompleted))
 	}
 
 	// TODO: use the zoom client that I built in ./pkg/zoom
 	// something to get all the meeting's recordings
 	// see https://zoom.github.io/api/#retrieve-a-meeting-s-all-recordings for that
+
+	// TODO: meeting ID or UUID?
+	recordingList := client.GetRecordingList(hook.MeetingID)
 	//
 	// step 2: choose the recording for video + speaker view
 	//
