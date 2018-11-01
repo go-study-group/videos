@@ -23,3 +23,7 @@ We recommend you heading over to [http://gobuffalo.io](http://gobuffalo.io) and 
 Good luck!
 
 [Powered by Buffalo](http://gobuffalo.io)
+
+# Resources
+
+A similar service written in Python: https://github.com/Welltory/zoom2youtube
